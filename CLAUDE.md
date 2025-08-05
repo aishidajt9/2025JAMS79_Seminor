@@ -26,16 +26,20 @@
 ```
 2025JAMS79_Seminor/
 ├── CLAUDE.md              # プロジェクト概要・指示
-├── settings.json          # Claude Code設定
+├── settings.json          # Claude Code設定（hooks含む）
 ├── docs/
 │   ├── presentation/      # marpプレゼン資料
-│   │   └── presentation.md
+│   │   └── presentation.md  # メインプレゼンテーション（完成）
 │   └── figures/           # 図・画像資料
 │       ├── KGmoon.png     # 関西学院ロゴ
 │       ├── demon_image.webp    # 魔族イメージ
-│       └── susuwatari.jpeg     # ススワタリイメージ
+│       ├── susuwatari.jpeg     # ススワタリイメージ
+│       ├── ColemanBoat.png     # Coleman図
+│       ├── Manzo_2014.png      # Manzo図
+│       └── hal-hefner-2001-the-monolith-hal-hefner-2.jpg  # HAL9000イメージ
 └── resources/            # 参考資料・メモ
-    └── memo.md
+    ├── memo.md
+    └── 各種PDF参考文献
 ```
 
 ## 主要参考文献
@@ -43,7 +47,14 @@
 - Berryman, J., & Ziegler, A. (2025). *LLMのプロンプトエンジニアリング*. オライリー・ジャパン.
 - Mirzadeh, I., et al. (2024). GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models. *arXiv preprint arXiv:2410.05229*.
 
-## 開発メモ
+## 開発ステータス
+### プレゼンテーション完成状況（2025-08-05）
+- ✅ **基本構造**: 29スライド構成完成
+- ✅ **コンテンツ**: 理論・実践・デモの3部構成
+- ✅ **視覚素材**: 比喩イメージ・図表配置完了
+- ✅ **技術内容**: Transformer解説・Claude Code実演含む
+- ✅ **学術品質**: 参考文献・数理社会学的観点統合済み
+
 ### プレゼンテーション特徴
 - **marp使用**: Markdown→スライド変換
 - **カラーテーマ**: 赤・青・緑・オレンジ・ハイライト設定済み
@@ -51,19 +62,28 @@
 - **2カラムレイアウト**: 画像・テキスト併置可能
 
 ### LLMの比喩的表現
-- **魔族**（葬送のフリーレン）: 言語模倣・パターンマッチング
-- **ススワタリ**（千と千尋）: 並列処理・集合知
+- **魔族**（葬送のフリーレン）: 言語模倣・パターンマッチング特性の説明
+- **ススワタリ**（千と千尋）: 並列処理・集合知の視覚化
+- **HAL9000**: AI研究史・SF文脈での位置づけ
 
 ### 学術的視点
 - **Sociological GPT**: 理解vs予測の生成モデル
-- **最新AI研究**: Apple論文による推論能力の限界指摘
-- **実践的活用**: Claude Code等ツールの研究応用
+- **Coleman図**: ミクロ-マクロリンク理論との接続
+- **最新AI研究**: Apple/MIT論文による推論能力の限界指摘
+- **実践的活用**: Claude Code等ツールの研究応用デモ
 
 ## Claude Code設定情報
-- 言語: 日本語メイン
-- 出力形式: Markdown優先
-- コードスタイル: 学術研究向け
-- Github公開前提・学術発表品質維持
+- **言語**: 日本語メイン
+- **出力形式**: Markdown優先
+- **コードスタイル**: 学術研究向け
+- **Github公開前提**: 学術発表品質維持
+- **hooks設定**: settings.jsonで通知機能有効化済み
+
+## 次回作業予定
+- [ ] プレゼンテーション最終調整・リハーサル
+- [ ] 実演デモ用サンプルコード準備
+- [ ] 配布資料・参考リンク集作成
+- [ ] 質疑応答想定問答準備
 
 ## Git管理指示
 ### コミット時の注意
