@@ -150,7 +150,7 @@ section {
 
 ### モデリング戦略：
 - 中範囲理論：グランドセオリーを志向しない
-- 低次の近似：単純な構造，少数のパラメタ
+- 低次の近似：単純な構造 $S=M+o(x^3)$，少数のパラメタ
 - 行為者の意図の実装：エージェントベースド
 - 行為のアグリゲーション：Coleman's boat
 
@@ -197,6 +197,7 @@ Generative Model Formation
 
 - カツカレーより始めよ（浜田 2020）
 - 写経より始めよ（イシダ 2025）
+  - Toy modelは紙と鉛筆，簡単なコードで再現可能
 - オモローをみつける（『理論と方法』次号特集）
   - 転がして天啓を待ち機を逃さずコネコネする
   - 生活者（内部観察者）としての視点と分析者（外部観察者）としての視点を往還する
@@ -229,6 +230,8 @@ Generative Model Formation
   - Perplexity, ScholarAI, Elicit, etc.
 - コーディングAI
   - GitHub Copilot, <span class="red">**Claude Code**</span>, Gemini-cli, etc.
+- IDE統合
+  - Cursor, Windsurf, Kiro, etc.
 
 ---
 
@@ -261,7 +264,7 @@ Generative Model Formation
 
 - Claude pro契約（年$200）
   - Claude app
-  - Claude Code
+  - Claude Code (sonnet 4)
 - Github Education (free for students and teachers)
   - https://github.com/education?locale=ja
   - Github Copilot
@@ -324,6 +327,18 @@ claude
   - `.claude/settings.json`に記述
   - https://docs.anthropic.com/ja/docs/claude-code/hooks
 
+
+---
+
+## その他の機能
+
+- MCP (Model Context Protocol)
+  - 外部ツールやデータソースとの連携
+  - Claude appの設定を取り込める
+  - https://docs.anthropic.com/ja/docs/claude-code/mcp
+- サブエージェント
+  - タスクを委任するサブエージェントを事前設定して呼び出せる
+  - https://docs.anthropic.com/ja/docs/claude-code/sub-agents
 
 ---
 
