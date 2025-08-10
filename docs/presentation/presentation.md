@@ -66,15 +66,32 @@ aishida@kwansei.ac.jp
 - **<span class="red">T</span>ransformer**：注意機構を使った深層学習モデル
 - 2022年ChatGPT公開で一般に普及
   - https://chatgpt.com
+- 2025年8月に最新のGPT-5が公開
 
 ---
 
-## Transformerとは？（by claude sonnet 4）
+## Transformerとは？（by Claude Code）
 - **Attention Mechanism**を用いたニューラルネットワークアーキテクチャ (Vaswani et al., 2017)
 - 自然言語処理（NLP）での性能向上に寄与
 - **BERT**や**GPT**などのモデルで採用
 - **自己注意**（Self-Attention）により，文脈を考慮した処理が可能
 - **並列処理**が可能で，学習効率が向上
+
+---
+
+<style scoped>
+.center {
+  text-align: center;
+}
+</style>
+
+<div class="center">
+
+![w:380](../figures/ModalNet-21.png)
+
+(Vaswani et al., 2017, Fig. 1)
+
+</div>
 
 ---
 
@@ -117,12 +134,6 @@ aishida@kwansei.ac.jp
 
 ---
 
-<style scoped>
-section {
-  font-size: 24px;
-}
-</style>
-
 ## 数理社会学における生成モデルの系譜
 
 ### Fararo
@@ -130,16 +141,23 @@ section {
 - プロセス世界観にもとづく生成メカニズムのモデル化 (Fararo 1989=1996)
 - 生成アプローチにもとづく階層イメージの生成理論の構築 (Fararo & Kosaka 2003)
 
+----
+
+## 数理社会学における生成モデルの系譜
+
 ### Boudon
 - Generating Models as a Research Strategy (Boudon 1979)
 - 社会学理論と統計分析，量的分析とウェーバー的理解の調停
 - 原子論と社会学主義のピットフォールの回避
 
+### Analytical Sociology
+- 分析社会学の原理 (Manzo 2014)
+
 ---
 
 <style scoped>
 section {
-  font-size: 24px;
+  font-size: 26px;
 }
 </style>
 
@@ -153,7 +171,7 @@ section {
 - 低次の近似：単純な構造 $S=M+o(x^3)$，少数のパラメタ
 - 行為者の意図の実装：エージェントベースド
 - 行為のアグリゲーション：Coleman's boat
-
+- <span class="red">**生成メカニズムをブラックボックスにしない**</span>
 ---
 
 ## Coleman's Boat (Coleman 1986)
@@ -178,7 +196,7 @@ section {
 
 Generative Model Formation
 
-- Methodological Individualism
+- Structural Methodological Individualism
 - Logics of Action
 - Structural Interdependency
 
@@ -186,7 +204,7 @@ Generative Model Formation
 
 <div>
 
-<img src="../figures/Manzo_2014.png" width="500">
+<img src="../figures/Manzo_2014.png" width="650">
 
 </div>
 </div>
@@ -214,7 +232,7 @@ Generative Model Formation
 1. Bare-handed Mathematical Sociology
 2. <span class="red">**AI-Boosted Mathematical Sociology**</span>
 3. AI-Generated Mathematical Sociology
-4. AI-Autonomous Mathematical Sociology
+4. AI-Dominated Mathematical Sociology
 
 ---
 
@@ -256,7 +274,8 @@ Generative Model Formation
   - ディレクトリの中に<span class="orange">✹✹</span>Claudeウニ<span class="orange">✹✹</span>がうようよいるイメージ
 - 生成AIがエージェント（代理人）のように振る舞う
 - Claudeのプロ以上の契約，もしくはAPIでの利用
-- https://docs.anthropic.com/ja/docs/claude-code/overview
+  - https://docs.anthropic.com/ja/docs/claude-code/overview
+- 類似ツール: Gemini-cli, OpenAI codex, Cursor CLI, etc.
 
 ---
 
@@ -344,14 +363,31 @@ claude
 
 ## 注意
 
-- 必ず安全に切り離されたプロジェクトディレクトリで実行し，絶対ルートディレクトリとかホームディレクトリで実行しないこと
+- 必ず安全に切り離されたプロジェクトディレクトリで実行し，ルートディレクトリとかホームディレクトリで絶対に実行しない
   - 油断したら`rm -rf`される
-- Claude Codeの吐き出すコードをよく読んで承認を与えること
+  - コンテナ内での利用も検討する
+- Claude Codeの吐き出すコードをよく読んで承認を与える
   - 違うことを始めたら`Esc`
   - plan-modeの活用，`Shift + Tab`
 - できるだけコンテキストを明示化する
   - `CLAUDE.md`の活用・管理
-- レート制限に注意
+
+---
+
+## AI-boosted Mathematical Sociology
+
+- にんげんがさきAIは後（みつを）
+- 考えること，理解することをAIに完全に任せない
+- AIの得手不得手を理解し，適切に活用する
+  - パターン認識・定型作業・コード生成は得意
+  - 複雑な論理推論・創造的思考は限界がある
+  - 数式処理は基本的なものは得意だが，新規性のある数学的発見は困難
+- あくまでオーサーシップは人間にある（いまのところ）
+- しかしAIのさらなる進化には備えておく必要がある
+
+---
+
+![](../figures/skynet-is-here-thanks-to-robotics.webp)
 
 ---
 ## 質疑応答
