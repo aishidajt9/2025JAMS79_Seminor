@@ -20,7 +20,10 @@
 ```
 ├── docs/presentation/     # プレゼンテーション資料
 ├── docs/figures/         # 図版・画像素材
-└── README.md            # 基本情報
+├── python-demo/          # Pythonデモ環境（iris分析用）
+├── R-demo/              # Rデモ環境（iris分析用）
+├── README.md            # クイックスタート（参加者向け）
+└── CLAUDE.md           # 詳細情報（このファイル）
 ```
 
 ### Marpでスライドを表示する方法
@@ -68,6 +71,59 @@ claude
 ```
 
 詳細：https://docs.anthropic.com/ja/docs/claude-code/
+
+## デモ環境の詳細
+
+### Python環境 (`python-demo/`)
+- **目的**: セミナーでClaude Codeを使ったPythonデータ分析の実演
+- **環境管理**: [uv](https://github.com/astral-sh/uv)（Rustベースの高速Pythonパッケージマネージャー）
+- **対象**: irisデータセットを使った基本的な分析
+- **構成**:
+  ```
+  python-demo/
+  ├── pyproject.toml    # プロジェクト設定
+  ├── main.py          # メインスクリプト
+  ├── irirs.py         # iris分析コード
+  └── README.md        # 環境固有の説明
+  ```
+
+#### uvセットアップ手順:
+```bash
+cd python-demo
+uv init                    # プロジェクト初期化
+uv add ipykernel          # Jupyter kernel追加
+uv run python -m ipykernel install --user --name python-demo
+```
+
+### R環境 (`R-demo/`)
+- **目的**: Rでの同じ分析をClaude Codeでアシストする実演
+- **対象**: irisデータセットの統計分析・可視化
+- **構成**:
+  ```
+  R-demo/
+  └── iris.R           # Rスクリプト
+  ```
+
+### Claude Code実践活用例
+- **環境構築**: uvやRの環境をClaude Codeがサポート
+- **コード生成**: データ分析パイプラインの自動生成
+- **デバッグ**: エラー解析と修正提案
+- **ドキュメント**: コメント・説明の自動追加
+- **最適化**: コード改善とベストプラクティス提案
+
+### セミナー実施のための追加情報
+
+#### ログ管理・レビュー
+```bash
+# Claude Codeセッションのログを確認
+uvx claude-code-log@latest --open-browser
+```
+
+#### VS Code統合（推奨環境）
+- Marpプレビュー: `Ctrl/Cmd + Shift + P` → "Marp: Open preview"
+- リアルタイム編集: プレゼン資料の編集と同時プレビュー
+- Claude Code連携: ターミナル内でのシームレスな作業
+
 
 ## 参考文献・学習リソース
 
