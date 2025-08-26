@@ -194,7 +194,7 @@ section {
 
 分析社会学の原理 (Manzo 2014)
 
-Generative Model Formation
+Generative Model Formulation
 
 - Structural Methodological Individualism
 - Logics of Action
