@@ -11,9 +11,9 @@
 ## このリポジトリの使い方
 
 ### プレゼンテーション資料
-- **Markdown版**: `docs/presentation/presentation.md` 
+- **Markdown版**: `docs/presentation/2025JAMS79_Seminor_Ishida.md` 
   - [Marp](https://marp.app/)対応エディタで閲覧・編集可能
-- **PDF版**: `docs/presentation/presentation.pdf`
+- **PDF版**: `docs/presentation/2025JAMS79_Seminor_Ishida.pdf`
   - 印刷・配布用
 
 ### ファイル構成
@@ -32,10 +32,10 @@
 npm install -g @marp-team/marp-cli
 
 # HTMLに変換
-marp docs/presentation/presentation.md --html
+marp docs/presentation/2025JAMS79_Seminor_Ishida.md --html
 
 # PDFに変換
-marp docs/presentation/presentation.md --pdf
+marp docs/presentation/2025JAMS79_Seminor_Ishida.md --pdf
 ```
 
 ## セミナーの学術的背景

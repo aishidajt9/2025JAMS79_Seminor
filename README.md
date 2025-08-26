@@ -9,8 +9,8 @@
 
 ## 📖 資料の閲覧
 
-- **プレゼン資料**: [`docs/presentation/presentation.md`](docs/presentation/presentation.md)
-- **PDF版**: [`docs/presentation/presentation.pdf`](docs/presentation/presentation.pdf)
+- **プレゼン資料**: [`docs/presentation/2025JAMS79_Seminor_Ishida.md`](docs/presentation/2025JAMS79_Seminor_Ishida.md)
+- **PDF版**: [`docs/presentation/2025JAMS79_Seminor_Ishida.pdf`](docs/presentation/2025JAMS79_Seminor_Ishida.pdf)
 
 
 ## 🛠 Claude Code セットアップ（Mac）
